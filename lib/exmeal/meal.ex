@@ -7,9 +7,11 @@ defmodule Exmeal.Meal do
 
   @required_params [:descricao, :data, :calorias]
 
+  @derive {Jason.Encoder, only: [:id, :description, :date, :calories]}
+
   schema "meals" do
     field :descricao, :string
-    field :data, :date
+    field :data, :naive_datetime
     field :calorias, :integer
 
     timestamps()
@@ -19,7 +21,7 @@ defmodule Exmeal.Meal do
     changeset
     |> cast(params, @required_params)
     |> validate_required(@required_params)
-    |> validate_length(:descricao, min: 5)
+    |> validate_length(:descricao, min: 3)
     |> validate_number(:calorias, greater_than_or_equal_to: 1)
   end
 end
