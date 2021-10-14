@@ -5,14 +5,14 @@ defmodule Exmeal.Meal do
 
   @primary_key {:id, :binary_id, autogenerate: true}
 
-  @required_params [:descricao, :data, :calorias]
+  @required_params [:description, :date, :calories]
 
-  @derive {Jason.Encoder, only: [:id, :descricao, :data, :calorias]}
+  @derive {Jason.Encoder, only: [:id, :description, :date, :calories]}
 
   schema "meals" do
-    field :descricao, :string
-    field :data, :date
-    field :calorias, :integer
+    field :description, :string
+    field :date, :date
+    field :calories, :integer
 
     timestamps()
   end
@@ -21,7 +21,7 @@ defmodule Exmeal.Meal do
     changeset
     |> cast(params, @required_params)
     |> validate_required(@required_params)
-    |> validate_length(:descricao, min: 3)
-    |> validate_number(:calorias, greater_than_or_equal_to: 1)
+    |> validate_length(:description, min: 3)
+    |> validate_number(:calories, greater_than_or_equal_to: 1)
   end
 end
