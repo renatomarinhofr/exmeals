@@ -16,20 +16,6 @@
       "test": "test Create Meal when there are invalid params, returns an error"
     },
     {
-      "describe": "Delete Meal",
-      "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal/meals/delete_test.exs",
-      "line": 5,
-      "module": "Elixir.Exmeal.Meals.DeleteTest",
-      "test": "test Delete Meal when a valid id is given, returns the meal"
-    },
-    {
-      "describe": "Delete Meal",
-      "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal/meals/delete_test.exs",
-      "line": 25,
-      "module": "Elixir.Exmeal.Meals.DeleteTest",
-      "test": "test Delete Meal when an invalid id is given, returns an error"
-    },
-    {
       "describe": "Get Meal",
       "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal/meals/get_test.exs",
       "line": 5,
@@ -42,6 +28,20 @@
       "line": 25,
       "module": "Elixir.Exmeal.Meals.GetTest",
       "test": "test Get Meal when an invalid id is given, returns an error"
+    },
+    {
+      "describe": "Delete Meal",
+      "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal/meals/delete_test.exs",
+      "line": 5,
+      "module": "Elixir.Exmeal.Meals.DeleteTest",
+      "test": "test Delete Meal when a valid id is given, returns the meal"
+    },
+    {
+      "describe": "Delete Meal",
+      "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal/meals/delete_test.exs",
+      "line": 25,
+      "module": "Elixir.Exmeal.Meals.DeleteTest",
+      "test": "test Delete Meal when an invalid id is given, returns an error"
     },
     {
       "describe": "Update Meal",
@@ -58,27 +58,6 @@
       "test": "test Update Meal when an invalid id is given, returns an error"
     },
     {
-      "describe": "get/2",
-      "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 108,
-      "module": "Elixir.Exmeal.MealsControllerTest",
-      "test": "test get/2 when id exist, return the meal"
-    },
-    {
-      "describe": "delete/2",
-      "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 43,
-      "module": "Elixir.Exmeal.MealsControllerTest",
-      "test": "test delete/2 when id exist, delete the meal"
-    },
-    {
-      "describe": "get/2",
-      "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 130,
-      "module": "Elixir.Exmeal.MealsControllerTest",
-      "test": "test get/2 when id not exist, return an error"
-    },
-    {
       "describe": "create/2",
       "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
       "line": 5,
@@ -93,11 +72,32 @@
       "test": "test update/2 when id exist, update the meal"
     },
     {
+      "describe": "get/2",
+      "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 108,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test get/2 when id exist, return the meal"
+    },
+    {
+      "describe": "get/2",
+      "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 130,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test get/2 when id not exist, return an error"
+    },
+    {
       "describe": "delete/2",
       "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
       "line": 58,
       "module": "Elixir.Exmeal.MealsControllerTest",
       "test": "test delete/2 when id not exist, return an error"
+    },
+    {
+      "describe": "delete/2",
+      "file": "/home/renatomarinhofr/Desktop/ignite-elixir/crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 43,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test delete/2 when id exist, delete the meal"
     },
     {
       "describe": "update/2",

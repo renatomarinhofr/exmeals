@@ -4,13 +4,21 @@ defmodule ExmealWeb.MealsController do
   alias Exmeal.Meal
   alias ExmealWeb.FallbackController
 
-  action_fallback FallbackController
+  action_fallback(FallbackController)
 
   def create(conn, params) do
     with {:ok, %Meal{} = meal} <- Exmeal.create_meal(params) do
       conn
       |> put_status(:created)
       |> render("create.json", meal: meal)
+    end
+  end
+
+  def delete(conn, %{"id" => id}) do
+    with {:ok, %Meal{}} <- Exmeal.delete_meal(id) do
+      conn
+      |> put_status(:no_content)
+      |> text("")
     end
   end
 
@@ -21,5 +29,4 @@ defmodule ExmealWeb.MealsController do
       |> render("meal.json", meal: meal)
     end
   end
-
 end
